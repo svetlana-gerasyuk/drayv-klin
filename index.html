@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow" data-publish>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Драйв Клин · автомойка и детейлинг в Петрозаводске</title>
+<meta name="description" content="Автомойка и детейлинг в Петрозаводске: мойка от 600 ₽, химчистка салона, полировка, керамика. Цена по типу кузова до заезда. Ежедневно 09:00–22:00, Лососинское шоссе, 39.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Драйв Клин">
+<meta property="og:title" content="Автомойка и детейлинг в Петрозаводске: цена до заезда">
+<meta property="og:description" content="Цена по типу кузова до заезда: двухфазная мойка от 600 ₽, детейлинг-мойка, химчистка, керамика. Ежедневно с 09:00 до 22:00.">
+<meta property="og:url" content="{{адрес сайта}}">
+<meta property="og:image" content="{{адрес сайта}}/assets/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="assets/hero-v-m.webp" media="(max-width: 860px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero-v.webp" media="(min-width: 861px)" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Ccircle cx=%2716%27 cy=%2716%27 r=%2711%27 fill=%27none%27 stroke=%27%23f65a52%27 stroke-width=%274%27/%3E%3Crect x=%2715%27 y=%274%27 width=%272%27 height=%2724%27 fill=%27%23f65a52%27/%3E%3C/svg%3E">
+<link rel="stylesheet" href="vibe.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoWash","name":"Драйв Клин","description":"Автомойка и детейлинг в Петрозаводске: мойка, воск, кварц, керамика, химчистка салона, полировка.","url":"{{адрес сайта}}","image":"{{адрес сайта}}/assets/og.jpg","telephone":"+79114263525","openingHours":"Mo-Su 09:00-22:00","address":{"@type":"PostalAddress","streetAddress":"Лососинское ш., 39, стр. 4","addressLocality":"Петрозаводск","addressCountry":"RU"},"priceRange":"от 600 ₽"}
+</script>
+<style>
+  /* ---- тема: шесть цветов, два шрифта --------------------------------- */
+  .v-page {
+    --v-canvas: #16181c; --v-surface: #22252b;
+    --v-ink: #f2f1ee; --v-ink-soft: #a5a9b0;
+    --v-accent: #f65a52; --v-accent-ink: #1c0605;
+    --v-font-display: "Rubik", "Arial", system-ui, sans-serif;
+    --v-font-text: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    --v-shadow-color: 6 7 9;
+    --v-radius: 8px;
+    --v-display-weight: 700;
+    --v-track-tight: -0.025em;
+    /* полупрозрачные подложки считаем от палитры, чтобы смена палитры была одной правкой */
+    --v-canvas-85: color-mix(in oklab, var(--v-canvas) 85%, transparent);
+    --v-canvas-60: color-mix(in oklab, var(--v-canvas) 60%, transparent);
+    --v-accent-25: color-mix(in oklab, var(--v-accent) 25%, transparent);
+    --v-accent-10: color-mix(in oklab, var(--v-accent) 10%, transparent);
+  }
+  html, body { background: #16181c; }
+  .v-page .v-lede { font-weight: 400; }
+  .v-page .v-label { font-weight: 500; }
+  .v-page .v-btn { font-size: var(--v-t-base); font-weight: 600; }
+  .v-page h3 { font-weight: 600; }
+
+  /* ---- шапка ------------------------------------------------------------ */
+  .bar { position: fixed; inset: 0 0 auto 0; z-index: 30; display: flex; align-items: center; justify-content: space-between;
+    padding: var(--v-3) var(--v-gutter); gap: var(--v-4);
+    background: linear-gradient(to bottom, var(--v-canvas-85), transparent);
+    transition: background-color .3s var(--v-ease-out), box-shadow .3s var(--v-ease-out); }
+  .bar.is-scrolled { background: var(--v-canvas-85); -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); box-shadow: 0 1px 0 var(--v-hair); }
+  .bar__mark { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-lg); letter-spacing: -.01em; text-decoration: none;
+    display: inline-flex; align-items: center; gap: .5em; min-height: 44px; white-space: nowrap; }
+  .bar__mark i { width: .8em; height: .8em; border-radius: 50%; border: .16em solid var(--v-accent); display: inline-block; position: relative; }
+  .bar__mark i::after { content: ""; position: absolute; left: 50%; top: -.16em; bottom: -.16em; width: .12em; margin-left: -.06em; background: var(--v-accent); }
+  .bar__right { display: flex; align-items: center; gap: var(--v-4); }
+  .bar__tel { text-decoration: none; font-weight: 600; font-size: var(--v-t-sm); color: var(--v-ink); display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--v-2); }
+  @media (max-width: 700px) {
+    .bar__tel { display: none; }
+    .bar .v-btn { padding: 0 1em; min-height: 44px; font-size: .9rem; }
+    .bar__right { gap: var(--v-2); }
+    .bar__mark { font-size: 1.1rem; }
+  }
+  @media (max-width: 860px) { .bar.is-scrolled { background: color-mix(in oklab, var(--v-canvas) 96%, transparent); } }
+  /* телефон: подписи не мельче 15 px (--v-t-sm на 390 px = 14 px) */
+  @media (max-width: 860px) {
+    .hero__tel, .hero__note, .rows p, .turn__text, .poka__fig figcaption, .xr__list em, .xr__meter, .step p, .plist .note, .prices__incl,
+    .nope li span, .reviews__meta, .reviews__rating, .reviews__fact, .close__hint, .close__meta { font-size: .95rem; }
+  }
+
+  /* ---- hero: вариант В – один кадр на весь экран, реплики-статусы сверху, оффер снизу ---------- */
+  /* img внутри <picture>: селектор движка .v-layer > img не достаёт, позиционируем сами; фон медленно приближается */
+  .hero__back img { position: absolute; max-width: none; width: 100%; height: 100%; left: 0; top: 0; object-fit: cover; object-position: 50% 50%;
+    transform: scale(calc(1 + var(--v-p, 0) * .08)); transform-origin: 50% 70%; }
+  .hero__top { position: absolute; inset: 0 0 auto 0; height: 58%; z-index: 2; pointer-events: none;
+    background: linear-gradient(to bottom, rgb(0 0 0 / .6) 0%, rgb(0 0 0 / .38) 45%, transparent 100%); }
+  .hero__floor { position: absolute; inset: auto 0 0 0; height: 52%; z-index: 2; pointer-events: none;
+    background: linear-gradient(to top, var(--v-canvas-85) 0%, var(--v-canvas-60) 50%, transparent 100%); }
+  .hero__say { max-width: min(46rem, 90vw); }
+  .hero__say .v-display { font-size: clamp(2rem, 1.1rem + 2.8vw, 3.6rem); line-height: 1.02; }
+  .hero__copy { bottom: clamp(2.5rem, 9vh, 6rem); max-width: min(48rem, 90vw); }
+  .hero__label { display: block; margin-bottom: var(--v-3); color: var(--v-ink); opacity: .85; }
+  .hero__copy .v-display { font-size: clamp(1.9rem, min(1rem + 2.4vw, 6.4svh), 3.3rem); line-height: 1; }
+  .hero__copy .v-lede { margin-top: var(--v-4); color: var(--v-ink); opacity: .92; max-width: 46ch; }
+  .hero__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-5); }
+  .hero__tel { text-decoration: none; color: var(--v-ink); font-size: var(--v-t-sm); display: inline-flex; align-items: center; min-height: 44px; gap: .35em; }
+  .hero__tel b { font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  @media (max-width: 860px) {
+    .hero__top { height: 46%; }
+    .hero__floor { height: 66%; }
+    .hero__tel { text-shadow: 0 1px 10px rgb(0 0 0 / .6); }
+    .v-page .hero__say { top: 5rem; }
+    .hero__say .v-display { font-size: var(--v-t-2xl); }
+    .v-page .hero__copy { bottom: calc(1.5rem + env(safe-area-inset-bottom)); }
+    .hero__copy .v-display { font-size: var(--v-t-xl); }
+    .hero__copy .v-lede { font-size: var(--v-t-base); margin-top: var(--v-3); }
+    .hero__cta { margin-top: var(--v-4); gap: var(--v-2) var(--v-5); }
+  }
+
+  /* ---- цена бездействия: строки боли, поворот, широкий кадр со шторкой ---- */
+  .poka__head { display: grid; gap: var(--v-3); margin-bottom: var(--v-7); max-width: 46rem; }
+  .poka__grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: var(--v-9); align-items: start; margin-bottom: var(--v-8); }
+  .rows li { padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); display: grid; gap: var(--v-1); }
+  .rows li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .rows h3 { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-xl); letter-spacing: var(--v-track-normal); line-height: 1.1; }
+  .rows p { color: var(--v-ink-soft); max-width: 46ch; text-wrap: pretty; }
+  .turn { position: sticky; top: clamp(5rem, 12vh, 7rem); padding: var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e1), var(--v-edge); display: grid; gap: var(--v-3); }
+  .turn .v-label { color: var(--v-accent); }
+  .turn__text { font-size: var(--v-t-lg); line-height: 1.35; text-wrap: pretty; }
+  .turn__text b { font-weight: 600; }
+  .poka__fig { position: relative; aspect-ratio: 21 / 9; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-e2), var(--v-edge); }
+  .poka__fig img { width: 100%; height: 100%; object-fit: cover; }
+  .poka__fig figcaption { position: absolute; left: var(--v-5); right: var(--v-5); bottom: var(--v-5); z-index: 1; font-size: var(--v-t-sm); color: var(--v-ink); max-width: 46ch; }
+  .poka__fig::after { content: ""; position: absolute; inset: auto 0 0 0; height: 55%; background: linear-gradient(to top, rgb(0 0 0 / .8), rgb(0 0 0 / .3) 50%, transparent); pointer-events: none; }
+  @media (max-width: 860px) {
+    .poka__grid { grid-template-columns: 1fr; gap: var(--v-6); margin-bottom: var(--v-7); }
+    .turn { position: static; padding: var(--v-5); }
+    .rows h3 { font-size: var(--v-t-lg); }
+    .poka__fig { aspect-ratio: 4 / 3; }
+  }
+
+  /* ---- фирменный ход: «просвет», рентген-развёртка по машине --------------- */
+  .xr { height: 100%; display: grid; grid-template-rows: auto 1fr auto; padding: clamp(4.5rem, 11vh, 6.5rem) var(--v-gutter) clamp(1.5rem, 4vh, 3rem); gap: var(--v-4); }
+  .xr__head { display: grid; grid-template-columns: 1fr auto; align-items: start; gap: var(--v-6); }
+  .xr__copy { grid-area: 1 / 1; max-width: 46rem; display: grid; gap: var(--v-3); }
+  .xr__copy .v-display--md { font-size: clamp(1.7rem, 1.2rem + 2vw, 2.9rem); }
+  .xr__copy .v-body { max-width: 52ch; }
+  .xr__meter { grid-area: 1 / 2; text-align: right; display: grid; gap: .2em; font-size: var(--v-t-sm); }
+  .xr__meter b { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-xl); line-height: 1; letter-spacing: -.01em; }
+  .xr__meter b span { color: var(--v-accent); }
+  .xr__fig { position: relative; justify-self: center; align-self: center; aspect-ratio: 16 / 9; width: min(100%, calc((100svh - 25rem) * 16 / 9)); container-type: size;
+    border-radius: var(--v-radius); overflow: visible; }
+  .xr__photo, .xr__scan { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: var(--v-radius); }
+  .xr__scan { filter: grayscale(1) contrast(1.35) brightness(1.12); clip-path: inset(0 calc((1 - var(--v-p, 0)) * 100%) 0 0); }
+  .xr__grid { position: absolute; inset: 0; border-radius: var(--v-radius); pointer-events: none;
+    background: repeating-linear-gradient(90deg, var(--v-hair) 0 1px, transparent 1px 2.5rem), repeating-linear-gradient(0deg, var(--v-hair) 0 1px, transparent 1px 2.5rem), var(--v-accent-10);
+    clip-path: inset(0 calc((1 - var(--v-p, 0)) * 100%) 0 0); }
+  .xr__line { position: absolute; top: -6%; bottom: -6%; left: calc(var(--v-p, 0) * 100%); width: 2px; margin-left: -1px; background: var(--v-accent); pointer-events: none; }
+  .xr__line::before { content: ""; position: absolute; right: 0; top: 0; bottom: 0; width: 3rem; background: linear-gradient(to left, var(--v-accent-25), transparent); }
+  .xr__nodes { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; }
+  .xr__node { position: absolute; left: calc(var(--x) * 100%); top: calc(var(--y) * 100%); width: 0; height: 0; --on: clamp(0, (var(--v-p, 0) - var(--x)) * 14, 1); }
+  .xr__node i { position: absolute; left: -6px; top: -6px; width: 12px; height: 12px; border-radius: 50%; background: var(--v-accent); box-shadow: 0 0 0 3px var(--v-canvas);
+    opacity: var(--on); transform: scale(calc(.4 + .6 * var(--on))); }
+  .xr__node::before { content: ""; position: absolute; left: -1px; width: 2px; height: var(--l); background: var(--v-accent); opacity: calc(var(--on) * .8); }
+  .xr__node--up::before { bottom: 0; transform-origin: bottom; transform: scaleY(var(--on)); }
+  .xr__node--down::before { top: 0; transform-origin: top; transform: scaleY(var(--on)); }
+  .xr__node span { position: absolute; left: 0; width: max-content; max-width: 15rem; transform: translateX(-50%) translateY(calc((1 - var(--on)) * 8px)); opacity: var(--on);
+    display: grid; gap: .15em; text-align: center; padding: .55em .8em .6em; border-radius: var(--v-radius); background: var(--v-canvas-85); box-shadow: 0 0 0 1px var(--v-hair), var(--v-e1); }
+  .xr__node--up span { bottom: calc(var(--l) + .5rem); }
+  .xr__node--down span { top: calc(var(--l) + .5rem); }
+  .xr__node b { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-base); line-height: 1.15; letter-spacing: -.01em; }
+  .xr__node em { font-style: normal; font-size: var(--v-t-xs); color: var(--v-ink-soft); }
+  .xr__node strong { font-weight: 600; font-size: var(--v-t-sm); color: var(--v-accent); }
+  .xr__list { display: none; }
+  @media (max-width: 860px) {
+    .xr { grid-template-rows: auto auto 1fr; padding-top: 4.5rem; gap: var(--v-3); }
+    .xr__head { grid-template-columns: 1fr; }
+    .xr__copy { max-width: none; gap: var(--v-2); }
+    .xr__copy .v-display--md { font-size: var(--v-t-xl); }
+    .xr__copy .v-body { font-size: var(--v-t-sm); }
+    .xr__meter { grid-area: 2 / 1; text-align: left; display: flex; align-items: baseline; gap: .6em; }
+    .xr__meter b { font-size: var(--v-t-lg); }
+    .xr__fig { width: 100%; align-self: start; }
+    .xr__node span, .xr__node::before { display: none; }
+    .xr__list { display: grid; align-self: start; margin: 0; padding: 0; list-style: none; }
+    .xr__list li { --on: clamp(0, (var(--v-p, 0) - var(--x)) * 14, 1); display: grid; grid-template-columns: auto 1fr auto; gap: .2em var(--v-3); align-items: baseline; padding: .55rem 0; border-top: 1px solid var(--v-hair);
+      opacity: calc(.38 + .62 * var(--on)); }
+    .xr__list li:last-child { border-bottom: 1px solid var(--v-hair); }
+    .xr__list i { width: 8px; height: 8px; border-radius: 50%; background: var(--v-accent); align-self: center; transform: scale(calc(.4 + .6 * var(--on))); }
+    .xr__list b { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-base); }
+    .xr__list em { grid-column: 2; font-style: normal; color: var(--v-ink-soft); }
+    .xr__list strong { grid-column: 3; grid-row: 1 / span 2; font-weight: 600; color: var(--v-accent); white-space: nowrap; }
+  }
+  @media (max-width: 600px) and (max-height: 760px) { .xr__copy .v-body { display: none; } .xr__list li { padding: .4rem 0; } .xr__list em { display: none; } }
+
+  /* ---- как проходит визит: лента шагов ---------------------------------------- */
+  .kak { height: 100%; display: flex; align-items: center; }
+  .rail { padding-inline: var(--v-gutter); align-items: stretch; }
+  .step { flex: none; width: 24rem; min-height: min(68svh, 32rem); display: grid; grid-template-rows: auto 1fr; gap: var(--v-4); padding: var(--v-6); border-radius: var(--v-radius);
+    background: var(--v-surface); box-shadow: var(--v-e1), var(--v-edge); }
+  .step--title { width: 28rem; background: transparent; box-shadow: none; padding-left: 0; grid-template-rows: auto auto 1fr; align-content: center; }
+  .step--title .v-display--lg { font-size: clamp(2rem, 1.3rem + 2.6vw, 3.6rem); }
+  .step--title p { align-self: end; max-width: 30ch; }
+  .step__label { color: var(--v-accent); }
+  .step__body { display: grid; gap: var(--v-3); align-content: start; }
+  .step h3 { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-xl); letter-spacing: var(--v-track-normal); line-height: 1.1; text-wrap: balance; }
+  .step p { color: var(--v-ink-soft); text-wrap: pretty; }
+  .step--photo { width: 30rem; grid-template-rows: auto auto 1fr; }
+  .step__fig { aspect-ratio: 4 / 3; border-radius: var(--v-radius); overflow: hidden; box-shadow: var(--v-edge); }
+  .step__fig img { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
+  .step--last { box-shadow: var(--v-e2), inset 0 0 0 1px var(--v-accent-25); }
+  @media (max-width: 860px) {
+    .step { width: 78vw; min-height: 0; padding: var(--v-5); }
+    .step--title { width: 78vw; padding-left: 0; min-height: 0; }
+    .step--title p { align-self: start; }
+    .step--photo { width: 78vw; }
+    .step__fig { aspect-ratio: 16 / 10; }
+    .step h3 { font-size: var(--v-t-lg); }
+  }
+  @media (pointer: coarse) {
+    .v-page .kak { display: block; padding-block: var(--v-section); }
+    .v-page .rail { padding-block: var(--v-2); }
+  }
+
+  /* ---- цены: две колонки строк и карточка «без согласования» ------------------- */
+  .prices { display: grid; grid-template-columns: 1.5fr .6fr; gap: var(--v-9); align-items: start; }
+  .prices__cols { display: grid; grid-template-columns: 1fr 1fr; gap: var(--v-7); }
+  .plist h3 { margin-bottom: var(--v-3); color: var(--v-accent); font-weight: 500; }
+  .plist li { display: grid; grid-template-columns: 1fr auto; gap: var(--v-1) var(--v-5); padding: var(--v-4) 0; border-top: 1px solid var(--v-hair); align-items: baseline; }
+  .plist li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .plist .name { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-lg); letter-spacing: var(--v-track-normal); line-height: 1.15; }
+  .plist .note { grid-column: 1; font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 36ch; }
+  .plist .price { grid-column: 2; grid-row: 1 / span 2; align-self: start; font-weight: 600; font-size: var(--v-t-base); color: var(--v-accent); white-space: nowrap; }
+  .prices__incl { font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 62ch; }
+  .prices__incl b { color: var(--v-ink); font-weight: 600; }
+  .prices__aside { position: sticky; top: clamp(5rem, 12vh, 7rem); }
+  .nope { padding: var(--v-6); border-radius: var(--v-radius); background: var(--v-surface); box-shadow: var(--v-e2), var(--v-edge); display: grid; gap: var(--v-4); }
+  .nope .v-label { color: var(--v-accent); }
+  .nope li { padding: var(--v-3) 0; border-top: 1px solid var(--v-hair); display: grid; gap: .2em; }
+  .nope li:last-child { border-bottom: 1px solid var(--v-hair); }
+  .nope li b { font-weight: 600; }
+  .nope li span { font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 1100px) { .prices__cols { grid-template-columns: 1fr; } }
+  @media (max-width: 860px) {
+    .prices { grid-template-columns: 1fr; gap: var(--v-7); }
+    .prices__aside { position: static; }
+    .nope { padding: var(--v-5); }
+    .plist .name { font-size: var(--v-t-base); }
+  }
+
+  /* ---- отзывы с Яндекс.Карт: рейтинг слева, список с линиями справа ----------- */
+  .reviews { display: grid; grid-template-columns: .8fr 1.2fr; gap: var(--v-9); align-items: start; }
+  .reviews__head { position: sticky; top: clamp(5rem, 12vh, 7rem); display: grid; gap: var(--v-4); }
+  .reviews__rating { display: grid; gap: var(--v-2); font-size: var(--v-t-sm); justify-items: start; }
+  .reviews__rating a { display: inline-flex; align-items: center; min-height: 44px; }
+  .reviews__num { font-family: var(--v-font-display); font-weight: 700; font-size: var(--v-t-3xl); line-height: 1; letter-spacing: -.02em; }
+  .reviews__stars { --size: 1.2rem; display: inline-block; width: calc(var(--size) * 5); height: var(--size);
+    background: linear-gradient(90deg, var(--v-accent) calc(var(--r, 0) / 5 * 100%), var(--v-hair-strong) 0);
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6L10 15l-5.4 3 1.2-6L1.3 7.8l6.1-.7z'/%3E%3C/svg%3E") 0 0 / var(--size) var(--size) repeat-x; }
+  .reviews__stars--sm { --size: .8rem; vertical-align: middle; }
+  .reviews__item { padding: var(--v-5) 0; border-top: 1px solid var(--v-hair); }
+  .reviews__item:last-of-type { border-bottom: 1px solid var(--v-hair); }
+  .reviews__item--big .reviews__text { font-size: var(--v-t-lg); line-height: 1.4; }
+  .reviews__text { text-wrap: pretty; max-width: 60ch; }
+  .reviews__meta { margin-top: var(--v-3); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  .reviews__meta b { color: var(--v-ink); font-weight: 600; }
+  .reviews__fact { margin-top: var(--v-5); font-size: var(--v-t-sm); color: var(--v-ink-soft); }
+  @media (max-width: 860px) { .reviews { grid-template-columns: 1fr; gap: var(--v-6); } .reviews__head { position: static; } .reviews__num { font-size: var(--v-t-2xl); } }
+
+  /* ---- финал: запись на время --------------------------------------------------- */
+  .close { min-height: 100svh; display: grid; grid-template-rows: 1fr auto; padding: clamp(6rem, 14vh, 9rem) var(--v-gutter) var(--v-6);
+    background: radial-gradient(60rem 40rem at calc(var(--v-mx, .5) * 100%) calc(var(--v-my, .5) * 100%), var(--v-accent-25), transparent 60%); }
+  .close__inner { align-self: center; display: grid; grid-template-columns: 1.25fr .75fr; gap: var(--v-9); align-items: start; padding-bottom: var(--v-9); }
+  .close__inner .v-display { margin-bottom: var(--v-5); }
+  .close__inner .v-lede { max-width: 42ch; }
+  .close__cta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--v-4) var(--v-6); margin-top: var(--v-6); }
+  .close__tel { font-family: var(--v-font-display); font-weight: 600; font-size: var(--v-t-xl); text-decoration: none; display: inline-flex; align-items: center; min-height: 44px; color: var(--v-ink); letter-spacing: -.01em; }
+  .close__hint { margin-top: var(--v-4); font-size: var(--v-t-sm); color: var(--v-ink-soft); max-width: 46ch; }
+  .close__meta { display: grid; gap: var(--v-3); color: var(--v-ink-soft); padding-top: var(--v-2); }
+  .close__meta b { color: var(--v-ink); font-weight: 600; display: block; font-size: var(--v-t-xs); letter-spacing: var(--v-track-wide); text-transform: uppercase; margin-bottom: .2em; }
+  .foot { display: flex; justify-content: space-between; gap: var(--v-4); padding: var(--v-6) 0 0; border-top: 1px solid var(--v-hair); font-size: var(--v-t-xs); color: var(--v-ink-soft); flex-wrap: wrap; }
+  @media (max-width: 860px) {
+    .close { min-height: 0; padding: clamp(5rem, 12vh, 7rem) var(--v-gutter) calc(var(--v-6) + env(safe-area-inset-bottom)); }
+    .close__inner { grid-template-columns: 1fr; gap: var(--v-7); padding-bottom: var(--v-8); }
+    .close__tel { font-size: var(--v-t-lg); }
+    .foot__more { display: none; }
+  }
+  .alsoin li { display: grid; grid-template-columns: 1fr auto; gap: .2em var(--v-4); align-items: baseline; }
+  .alsoin li b { font-weight: 600; }
+  .alsoin li span { font-size: var(--v-t-sm); color: var(--v-accent); font-weight: 600; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div class="v-page">
+  <span data-v-progress></span>
+  <div class="v-grain" aria-hidden="true"></div>
+
+  <header class="bar">
+    <a class="bar__mark" href="#top"><i aria-hidden="true"></i>Драйв Клин</a>
+    <nav class="bar__right" aria-label="Быстрые ссылки">
+      <a class="bar__tel" href="tel:+79114263525">+7 (911) 426-35-25</a>
+      <a class="v-btn" href="https://vk.ru/drivecleanptz" rel="noopener">Записаться</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- 1 · УЗНАВАНИЕ: студия на весь экран, реплики-статусы сверху, оффер снизу (вариант В) -->
+    <section id="top" data-v-act="pin" data-v-span="2.8" data-v-drift="#16181c" aria-label="Автомойка и детейлинг в Петрозаводске">
+      <div data-v-stage>
+        <div class="v-layer hero__back">
+          <picture>
+            <source media="(max-width: 860px)" srcset="assets/hero-v-m.webp">
+            <img src="assets/hero-v.webp" alt="Зал студии Драйв Клин: светлый пол, серые диваны, фреска с автомобилем на тёмной стене" width="1920" height="1080" fetchpriority="high">
+          </picture>
+        </div>
+        <div class="hero__top" aria-hidden="true"></div>
+        <div class="hero__floor" aria-hidden="true"></div>
+
+        <div class="v-copy v-copy--top hero__say" data-v-cue="0 0.36 0 0.05"><p class="v-display v-display--lg" data-v-kinetic="words">Выбрали услугу по прайсу</p></div>
+        <div class="v-copy v-copy--top hero__say" data-v-cue="0.34 0.68 0.05 0.05"><p class="v-display v-display--lg" data-v-kinetic="words">Знаете цену до заезда</p></div>
+        <div class="v-copy v-copy--top hero__say" data-v-cue="0.66 1 0.05 0"><p class="v-display v-display--lg" data-v-kinetic="words">Забрали чистую машину</p></div>
+
+        <div class="v-copy v-copy--lead hero__copy" data-v-cue="0 1 0 0">
+          <span class="v-label hero__label">Автомойка и детейлинг · ежедневно 09:00–22:00</span>
+          <h1 class="v-display v-display--xl">Автомойка и детейлинг в Петрозаводске: цена до заезда</h1>
+          <p class="v-lede">Стандартный кузов или крупногабарит – цена по типу машины известна заранее. Двухфазная мойка от 600 ₽.</p>
+          <div class="hero__cta">
+            <a class="v-btn" href="https://vk.ru/drivecleanptz" rel="noopener">Записаться</a>
+            <a class="hero__tel" href="tel:+79114263525">или позвоните <b>+7 (911) 426-35-25</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2 · ЦЕНА БЕЗДЕЙСТВИЯ и ПОВОРОТ: «просто помыть» -->
+    <section class="v-section v-section--tight" data-v-act="flow" data-v-drift="#1a1d22" id="poka" aria-label="Почему важно знать цену до заезда">
+      <div class="v-wrap">
+        <div class="poka__head" data-v-in data-v-stagger="70">
+          <span class="v-label">Пока на другой мойке: «просто помыть»</span>
+          <h2 class="v-display v-display--lg">«Помыть» – это за сколько и что входит?</h2>
+        </div>
+        <div class="poka__grid">
+          <ul class="rows" data-v-in data-v-stagger="80">
+            <li><h3>«Мойка» за 600 ₽ и «мойка» за 6 200 ₽ – разное</h3><p>Двухфазная мойка кузова и детейлинг-мойка называются одним словом, а состав и результат разные. Без прайса вы понимаете это уже на месте.</p></li>
+            <li><h3>Цена зависит от кузова, а спросить некогда</h3><p>Седан и кроссовер стоят по-разному: двухфазная мойка – 600 и 800 ₽. Если цен перед глазами нет, приходится гадать.</p></li>
+            <li><h3>Хорошая мойка находится случайно</h3><p>Заехали, потому что оказалась по дороге. А выбрать по услугам, ценам и отзывам заранее было негде.</p></li>
+          </ul>
+          <div class="turn" data-v-in data-v-in-self>
+            <span class="v-label">Поэтому</span>
+            <p class="turn__text">Цены стоят ниже – <b>по типу кузова, до заезда</b>. Выбираете услугу, видите, что в неё входит, и пишете в ВК или звоните. Приезжаете уже зная сумму.</p>
+          </div>
+        </div>
+        <figure class="poka__fig" data-v-reveal="down" data-v-reveal-at="0.42 0.68">
+          <img src="assets/wait.webp" srcset="assets/wait-900.webp 900w, assets/wait.webp 1600w" sizes="(max-width: 860px) 100vw, 76rem" alt="Зона ожидания студии: красные кресла и панорамные окна" width="1600" height="900" loading="lazy" decoding="async">
+          <figcaption>Зона ожидания в студии на Лососинском шоссе, 39</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 3 · ПОВОРОТ → ДОКАЗАТЕЛЬСТВО: «просвет» – зоны машины и цены -->
+    <section id="prosvet" data-v-act="pin" data-v-span="2.4" data-v-drift="#131518" aria-label="Что делаем с каждой частью машины">
+      <div data-v-stage>
+        <div class="xr">
+          <div class="xr__head">
+            <div class="xr__copy" data-v-cue="0 0.5 0 0.06">
+              <span class="v-label">Зоны машины</span>
+              <h2 class="v-display v-display--md">Что делаем с каждой частью машины</h2>
+              <p class="v-body v-soft">Для каждой зоны – услуга и цена из прайса. Цены на схеме – для стандартного кузова: седан, универсал, хетчбек.</p>
+            </div>
+            <div class="xr__copy" data-v-cue="0.5 1 0.06 0">
+              <span class="v-label">Стандарт и крупногабарит</span>
+              <h2 class="v-display v-display--md">Для пикапа, внедорожника и кроссовера цена выше</h2>
+              <p class="v-body v-soft">Вторая цена по каждой услуге – в прайсе ниже.</p>
+            </div>
+            <div class="xr__meter" aria-live="polite">
+              <span class="v-label">Зон показано</span>
+              <b class="v-nums"><span data-xr-n>0</span> / 5</b>
+            </div>
+          </div>
+
+          <figure class="xr__fig" aria-label="Схема зон машины с ценами на услуги">
+            <img class="xr__photo" src="assets/side.webp" srcset="assets/side-1000.webp 1000w, assets/side.webp 1920w" sizes="(max-width: 860px) 100vw, 80vw" alt="Белый кроссовер в профиль под жёстким светом" width="1920" height="1080" loading="lazy" decoding="async">
+            <img class="xr__scan" src="assets/side.webp" srcset="assets/side-1000.webp 1000w, assets/side.webp 1920w" sizes="(max-width: 860px) 100vw, 80vw" alt="" width="1920" height="1080" loading="lazy" decoding="async" aria-hidden="true">
+            <div class="xr__grid" aria-hidden="true"></div>
+            <div class="xr__line" aria-hidden="true"></div>
+            <ul class="xr__nodes" aria-hidden="true">
+              <li class="xr__node xr__node--down" style="--x:.29;--y:.72;--l:13cqh"><i></i><span><b>Диски</b><em>Химчистка дисков</em><strong class="v-nums">500 ₽ за колесо</strong></span></li>
+              <li class="xr__node xr__node--up" style="--x:.40;--y:.38;--l:14cqh"><i></i><span><b>Салон</b><em>Уборка и химчистка</em><strong class="v-nums">от 1 200 ₽</strong></span></li>
+              <li class="xr__node xr__node--down" style="--x:.55;--y:.58;--l:22cqh"><i></i><span><b>Кузов</b><em>Мойка, воск, кварц, керамика</em><strong class="v-nums">от 600 ₽</strong></span></li>
+              <li class="xr__node xr__node--up" style="--x:.76;--y:.46;--l:22cqh"><i></i><span><b>Двигатель</b><em>Бесконтактная мойка</em><strong class="v-nums">1 500 ₽</strong></span></li>
+              <li class="xr__node xr__node--down" style="--x:.84;--y:.53;--l:25cqh"><i></i><span><b>Фары</b><em>Полировка фар</em><strong class="v-nums">от 2 000 ₽</strong></span></li>
+            </ul>
+          </figure>
+
+          <ol class="xr__list">
+            <li style="--x:.29"><i aria-hidden="true"></i><b>Диски</b><em>Химчистка дисков</em><strong class="v-nums">500 ₽ за колесо</strong></li>
+            <li style="--x:.40"><i aria-hidden="true"></i><b>Салон</b><em>Уборка и химчистка</em><strong class="v-nums">от 1 200 ₽</strong></li>
+            <li style="--x:.55"><i aria-hidden="true"></i><b>Кузов</b><em>Мойка, воск, кварц, керамика</em><strong class="v-nums">от 600 ₽</strong></li>
+            <li style="--x:.76"><i aria-hidden="true"></i><b>Двигатель</b><em>Бесконтактная мойка</em><strong class="v-nums">1 500 ₽</strong></li>
+            <li style="--x:.84"><i aria-hidden="true"></i><b>Фары</b><em>Полировка фар</em><strong class="v-nums">от 2 000 ₽</strong></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · ДОКАЗАТЕЛЬСТВО: как проходит визит, лента шагов -->
+    <section id="kak" data-v-act="pan" data-v-span="2.5" data-v-drift="#1a1d22" aria-label="Как проходит визит">
+      <div data-v-stage>
+        <div class="kak">
+          <div class="rail" data-v-pan="0.04">
+            <div class="step step--title">
+              <span class="v-label">Как проходит визит</span>
+              <h2 class="v-display v-display--lg">Четыре шага от записи до чистой машины</h2>
+              <p class="v-soft">Состав услуги и цена известны до заезда.</p>
+            </div>
+            <article class="step">
+              <span class="v-label step__label">Шаг 1 · выбор</span>
+              <div class="step__body">
+                <h3>Выбрали услугу по прайсу и написали или позвонили</h3>
+                <p>Стандартный кузов или крупногабарит – цена зависит от типа машины. Записаться можно в ВК или по телефону +7 (911) 426-35-25.</p>
+              </div>
+            </article>
+            <article class="step step--photo">
+              <span class="v-label step__label">Шаг 2 · мойка</span>
+              <figure class="step__fig">
+                <img src="assets/parts.webp" srcset="assets/parts-480.webp 480w, assets/parts.webp 900w" sizes="(max-width: 860px) 78vw, 30rem" alt="Тёмный кроссовер в пене, струя воды" width="900" height="1200" loading="lazy" decoding="async">
+              </figure>
+              <div class="step__body">
+                <h3>Пена, мойка, сушка – в две или три фазы</h3>
+                <p>Двухфазная мойка кузова – от 600 ₽. Трёхфазная с сушкой – от 1 000 ₽. Комплекс ЛЮКС добавляет уборку салона.</p>
+              </div>
+            </article>
+            <article class="step">
+              <span class="v-label step__label">Шаг 3 · детейлинг</span>
+              <div class="step__body">
+                <h3>Воск, кварц, керамика, полировка – если нужно больше, чем мойка</h3>
+                <p>Отдельными услугами или детейлинг-мойкой Драйв Лайт и Драйв Про. Салон – уборка или полная химчистка.</p>
+              </div>
+            </article>
+            <article class="step step--photo step--last">
+              <span class="v-label step__label">Шаг 4 · выдача</span>
+              <figure class="step__fig">
+                <img src="assets/seat.webp" srcset="assets/seat-480.webp 480w, assets/seat.webp 900w" sizes="(max-width: 860px) 78vw, 30rem" alt="Чистый белый кроссовер сзади" width="900" height="1200" loading="lazy" decoding="async">
+              </figure>
+              <div class="step__body">
+                <h3>Забрали чистую машину</h3>
+                <p>Срок зависит от услуги: на мойку уходит меньше времени, на керамику с полировкой – больше.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · ВЫБОР: услуги и цены -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#16181c" id="ceny" aria-label="Цены на услуги">
+      <div class="v-wrap prices">
+        <div class="v-stack" data-v-in data-v-stagger="60">
+          <h2 class="v-display v-display--lg">Цены по типу кузова – до заезда</h2>
+          <p class="v-body v-soft">Первая цена – стандартный кузов: универсал, седан, хетчбек. Для крупногабарита (пикап, внедорожник, кроссовер) – цена в подписи.</p>
+          <div class="prices__cols">
+            <div class="plist">
+              <h3 class="v-label">Мойка и кузов</h3>
+              <ul>
+                <li><span class="name">Двухфазная мойка кузова</span><span class="note">Крупногабарит: 800 ₽</span><span class="price v-nums">600 ₽</span></li>
+                <li><span class="name">Трёхфазная мойка с сушкой</span><span class="note">Крупногабарит: 1 200 ₽</span><span class="price v-nums">1 000 ₽</span></li>
+                <li><span class="name">Трёхфазный комплекс ЛЮКС</span><span class="note">Крупногабарит: 2 500 ₽. С мойкой багажника: 2 500 / 2 800 ₽</span><span class="price v-nums">2 300 ₽</span></li>
+                <li><span class="name">Кварцевое защитное покрытие</span><span class="note">Крупногабарит: 1 500 ₽</span><span class="price v-nums">1 200 ₽</span></li>
+                <li><span class="name">Покрытие твёрдым воском</span><span class="note">Крупногабарит: 3 000 ₽</span><span class="price v-nums">2 500 ₽</span></li>
+                <li><span class="name">Удаление следов насекомых</span><span class="note">Крупногабарит: 1 000 ₽</span><span class="price v-nums">1 000 ₽</span></li>
+                <li><span class="name">Антидождь на стёкла</span><span class="note">Передняя полусфера – 2 500 ₽, все стёкла – 4 000 ₽</span><span class="price v-nums">от 2 500 ₽</span></li>
+              </ul>
+            </div>
+            <div class="plist">
+              <h3 class="v-label">Детейлинг и салон</h3>
+              <ul>
+                <li><span class="name">Детейлинг-мойка Драйв Лайт</span><span class="note">Крупногабарит: 5 800 ₽</span><span class="price v-nums">5 000 ₽</span></li>
+                <li><span class="name">Детейлинг-мойка Драйв Про</span><span class="note">Крупногабарит: 7 000 ₽</span><span class="price v-nums">6 200 ₽</span></li>
+                <li><span class="name">Керамика с полировкой в три этапа</span><span class="note">Крупногабарит: 28 000 ₽</span><span class="price v-nums">27 000 ₽</span></li>
+                <li><span class="name">Полировка фар</span><span class="note">Пара фар</span><span class="price v-nums">от 2 000 ₽</span></li>
+                <li><span class="name">Уборка салона</span><span class="note">Крупногабарит: 1 500 ₽</span><span class="price v-nums">1 200 ₽</span></li>
+                <li><span class="name">Полная химчистка салона</span><span class="note">Пол, потолок, сиденья, пластик, багажник, стёкла после химчистки</span><span class="price v-nums">от 12 000 ₽</span></li>
+                <li><span class="name">Химчистка дисков</span><span class="note">За одно колесо</span><span class="price v-nums">500 ₽</span></li>
+                <li><span class="name">Бесконтактная мойка двигателя</span><span class="note">С защитой электрооборудования</span><span class="price v-nums">1 500 ₽</span></li>
+              </ul>
+            </div>
+          </div>
+          <p class="prices__incl"><b>Цены взяты с карточки студии на Яндекс Картах.</b> Точную сумму для вашей машины уточняйте при записи.</p>
+        </div>
+        <aside class="prices__aside" data-v-in data-v-in-self>
+          <div class="nope alsoin" data-v-tilt="5">
+            <span class="v-label">Ещё в прайсе</span>
+            <ul>
+              <li><b>Ремонт сколов и стёкол</b><span>от 1 500 ₽</span></li>
+              <li><b>Обезжиривание кузова</b><span>от 1 000 ₽</span></li>
+              <li><b>Оклейка фар</b><span>от 4 500 ₽</span></li>
+              <li><b>Оклейка передней части (зоны риска)</b><span>от 67 000 ₽</span></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 6 · ДОВЕРИЕ: отзывы с Яндекс.Карт -->
+    <section class="v-section" data-v-act="flow" data-v-drift="#1a1d22" id="otzyvy" aria-label="Отзывы с Яндекс.Карт">
+      <div class="v-wrap reviews">
+        <div class="reviews__head" data-v-in data-v-stagger="60">
+          <h2 class="v-display v-display--md">Что пишут на Яндекс.Картах</h2>
+          <div class="reviews__rating">
+            <span class="reviews__num v-nums">5,0</span>
+            <span class="reviews__stars" style="--r: 5.0" role="img" aria-label="рейтинг 5,0 из 5"></span>
+            <span class="v-soft">114 отзывов</span>
+            <a href="https://yandex.ru/maps/org/drayv_klin/230440751543/" target="_blank" rel="noopener">Читать все отзывы</a>
+          </div>
+          <p class="reviews__fact">Отзывы скопированы с карточки на Яндекс.Картах без правок.</p>
+        </div>
+        <ul class="reviews__list" data-v-in data-v-stagger="90">
+          <li class="reviews__item reviews__item--big">
+            <p class="reviews__text">«Помыли быстро, чисто, качественно. После мытья постелили одноразовые коврики, мелочь казалось бы, но крайне приятно.»</p>
+            <p class="reviews__meta"><b>Яна</b> · 13 июня · <span class="reviews__stars reviews__stars--sm" style="--r: 5" role="img" aria-label="оценка 5 из 5"></span></p>
+          </li>
+          <li class="reviews__item">
+            <p class="reviews__text">«На данный момент самая лучшая мойка и детейлинг услуги в городе.»</p>
+            <p class="reviews__meta"><b>Виктор Б.</b> · 7 августа · <span class="reviews__stars reviews__stars--sm" style="--r: 5" role="img" aria-label="оценка 5 из 5"></span></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7 · ДЕЙСТВИЕ: запись -->
+    <section data-v-act="flow" data-v-drift="#16181c" id="zapis" aria-label="Записаться">
+      <div class="close" data-v-spotlight>
+        <div class="close__inner">
+          <div data-v-in data-v-stagger="80">
+            <h2 class="v-display v-display--lg">Запишитесь на удобное время</h2>
+            <p class="v-lede">Напишите в ВК, какая у вас машина и что нужно. Или позвоните.</p>
+            <div class="close__cta">
+              <a class="v-btn" href="https://vk.ru/drivecleanptz" rel="noopener" data-v-magnet="0.22">Записаться</a>
+              <a class="close__tel" href="tel:+79114263525">+7 (911) 426-35-25</a>
+            </div>
+            <p class="close__hint">Работаем ежедневно с 09:00 до 22:00.</p>
+          </div>
+          <div class="close__meta" data-v-in data-v-stagger="60">
+            <span><b>Часы работы</b>ежедневно 09:00–22:00</span>
+            <span><b>Адрес</b>Лососинское ш., 39, стр. 4, Петрозаводск</span>
+            <span><b>ВКонтакте</b><a href="https://vk.ru/drivecleanptz" rel="noopener">vk.ru/drivecleanptz</a></span>
+          </div>
+        </div>
+        <footer class="foot">
+          <span>Драйв Клин · Петрозаводск</span>
+          <span class="foot__more">Автомойка и детейлинг: мойка, воск, кварц, керамика, химчистка, полировка</span>
+        </footer>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="vibe.js"></script>
+<script>
+  // На телефоне пины короче: data-v-span из CSS не поменять, правим атрибут до монтирования.
+  if (window.matchMedia('(max-width: 860px)').matches) {
+    document.getElementById('top').setAttribute('data-v-span', '2.4');
+    document.getElementById('prosvet').setAttribute('data-v-span', '2.2');
+  }
+  Vibe.mount(document.querySelector('.v-page'));
+
+  // Шапка: подложка после 40 px прокрутки, чтобы текст секций не просвечивал.
+  (function () {
+    var bar = document.querySelector('.bar'), on = null;
+    function tick() { var s = window.scrollY > 40; if (s !== on) { on = s; bar.classList.toggle('is-scrolled', s); } }
+    window.addEventListener('scroll', tick, { passive: true }); tick();
+  })();
+
+  // Фирменный ход «просвет»: развёртка и узлы живут в CSS от --v-p; скрипту остаётся счётчик «узлов проверено».
+  (function () {
+    var act = document.getElementById('prosvet'), out = act.querySelector('[data-xr-n]');
+    var xs = Array.prototype.map.call(act.querySelectorAll('.xr__node'), function (n) { return parseFloat(getComputedStyle(n).getPropertyValue('--x')) || 0; });
+    var last = -1, live = false;
+    function tick() {
+      var p = parseFloat(getComputedStyle(act).getPropertyValue('--v-p')) || 0, n = 0;
+      for (var i = 0; i < xs.length; i++) if (p >= xs[i] + 0.04) n++;
+      if (n !== last) { last = n; out.textContent = n; }
+      if (live) requestAnimationFrame(tick);
+    }
+    new IntersectionObserver(function (es) { live = es[0].isIntersecting; if (live) tick(); }).observe(act);
+    tick();
+  })();
+</script>
+</body>
+</html>
